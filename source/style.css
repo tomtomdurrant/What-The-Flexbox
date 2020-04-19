@@ -159,7 +159,7 @@ input::-moz-focus-inner {
 /* Some default styles to make each box visible */
 .box {
   color: white;
-  font-size: 50px;
+  font-size: 100px;
   text-align: center;
   text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
   padding: 10px;
@@ -200,13 +200,39 @@ input::-moz-focus-inner {
 /* We start writing out flexbox here. The above is just page setup */
 .container {
   display: flex;
+  border: 10px solid goldenrod;
+  height: 100vh;
+  align-items: flex-start;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* flex-wrap: wrap; */
+  /* align-content: center; */
+
+  /* border: 10px solid goldenrod;
+  height: 100vh;
+  flex-wrap: wrap;
+  flex-direction: column; */
+}
+
+.box {
+  width: 33.33%;
+  flex-basis: 1;
 }
 
 .box1 {
-  flex: 10 5 400px;
+  flex-grow: initial;
 }
 
-/* Flex grow, flex shrink, flex basis */
 .box2 {
-  flex: 1 1 400px;
+  padding-bottom: 200px;
+}
+
+.box6 {
+  /* font-size: 70px; */
+  padding-bottom: 0;
+}
+
+.box9 {
+  /* align-self: center; */
+  padding-bottom: 50px;
 }
